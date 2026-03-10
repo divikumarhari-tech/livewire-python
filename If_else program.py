@@ -84,9 +84,7 @@ elif c=="/":
 else:
     print("Wrong operation")'''
 
-#10 Late fine
 
-a=int(input("
 
 
     
