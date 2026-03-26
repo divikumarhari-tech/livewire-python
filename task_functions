@@ -1,0 +1,158 @@
+#1 Printing sequence
+'''
+def series1():
+    for i in range(2,18,2):
+        print(i,end=",")
+
+def series2():
+    for i in range(50,-1,-10):
+        print(i,end=",")
+print("Series()")
+series1()
+print("\nSeries()")
+series2()
+'''
+#2 Square and cube
+'''
+def square():
+    a=int(input("Enter a number:"))
+    i=a**2
+    return i
+print(square())
+
+def cube():
+    a=int(input("Enter a number:"))
+    i=a**3
+    return i
+print(cube())
+'''
+#3 Split digits
+'''
+def splitdigits():
+    a=int(input("Enter a number:"))
+    b=[]
+    while a>0:
+        c=a%10
+        b.append(c)
+        a=a//10
+    for i in b:
+        print(i)
+splitdigits()
+'''
+
+#4 Armstrong number
+'''
+def armstrong():
+    a=int(input("Enter a number:"))
+    count=0
+    x=a
+    y=a
+    while a>0:
+        count+=1
+        a=a//10
+    d=0
+    while x>0:
+        c=x%10
+        d=d+c**count
+        x=x//10
+    if d==y:
+        return "Armstrong number"
+    return "Not armstrong"
+print(armstrong())
+'''
+
+#5 Spy number
+'''
+def add(a):
+    b=0
+    while a>0:
+        c=a%10
+        b+=c
+        a=a//10
+    return b
+      
+def multiply(a):
+    b=1
+    while a>0:
+        c=a%10
+        b*=c
+        a=a//10
+    return b
+
+a=int(input("Enter a number:"))
+if add(a)==multiply(a):
+    print(a,"is a Spy number")
+else:
+    print(a,"is not a spy  number")
+'''
+
+#6 Square digits
+'''
+def squaredigits():
+    a=(input("Enter a number:"))
+    for i in a:
+          print(int(i)**2,end=",")
+squaredigits()
+
+'''
+
+#7 counting digits
+'''
+def counting_digits():
+    a=int(input("Enter a number:"))
+    print(a,"is a",len(str(a)), "number")
+counting_digits()
+'''
+
+#8 Sum of divisors
+'''
+def sum_of_divisors():
+    a=int(input("Enter a number:"))
+    divisor=0
+    for i in range(1,a+1):
+        if a%i==0:
+            divisor+=i
+    print("The sum of divisors:",divisor)
+sum_of_divisors()
+'''            
+#9 Laptop Purchase
+'''
+def lap_discount():
+    a=int(input("Whats the price of the laptop?:"))
+    if a==50000:
+        print("There is no discount, You have to pay:Rs",a)
+    elif a>50000 and a<=100000:
+        c=(a*10)/100
+        print("The discount is 10%, you have to pay Rs:",a-c)
+    elif a>100000 and a<=150000:
+        c=(a*15)/100
+        print("The discount is 15%, you have to pay Rs:",a-c)
+    elif a>150000:
+        c=(a*20)/100
+        print("The discount is 20%, You have to pay Rs:",a-c)
+lap_discount()
+'''   
+        
+#10 Capital letter or not
+'''
+def capital_letter():
+    a=str(input("Enter a Character:"))
+    if a>=chr(65) and a<=chr(90):
+      print("Capital letter")
+    elif a>=chr(97) and a<=chr(122):
+      print("Not a Capital")
+capital_letter()
+'''
+
+#11 Vowel or consonat
+'''
+def Vowel():
+    a=str(input("Enter a alaphabet:"))
+    v=['a','e','i','o','u']
+    for i in v:
+        if i==a:
+            return "Vowel"
+        return "Consonant"
+print(Vowel())
+
+'''
