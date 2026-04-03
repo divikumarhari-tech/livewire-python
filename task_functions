@@ -156,3 +156,19 @@ def Vowel():
 print(Vowel())
 
 '''
+#12 character to small letter
+'''
+def small_letter():
+    a=int(input("Enter a number from 97 to 122:"))
+    if a>=97 and a<=122:
+        print("The letter is",chr(a))
+small_letter()
+'''
+#13 addition of int and double
+'''
+def int_double():
+    a=int(input("Enter a number:"))
+    b=float(input("Enter another number:"))
+    c=a+b
+    print(c)
+int_double()
