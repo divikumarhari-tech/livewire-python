@@ -110,6 +110,40 @@ for i in range (len(a)):
             a[i],a[j]=a[j],a[i]
 print("The descending order is:",a)
 '''
+#7 Addition of one digit and two digit number
+'''
+a=[]
+n=int(input("How many numbers you want to enter?"))
+print("Enter the",n,"numbers:")
+sum1=0
+sum2=0
+a1=[]
+a2=[]
+for i in range(n):
+    a.append(int(input()))
+for i in a:
+    if i<10:
+        sum1+=i
+        a1.append(i)
+    elif i>=10 and i<100:
+        sum2+=i
+        a2.append(i)
+print("The one digit numbers are:",a1,"The sum of one digit number is:",sum1)
+print("The two digits numbers are:",a2,"The sum of two digit number is:",sum2)
+'''
+#8 Duplicate element in the Array
+
+a=[]
+n=int(input("How many elements you want to enter?"))
+print("Enter the",n,"elements:")
+dup=[]
+for i in range(n):
+    a.append(input())
+for i in range(0,len(a)):
+    for j in range(i+1,len(a)):
+        if a[i]==a[j]:
+            dup.append(a[i])
+print("The duplicate element is",dup)
 
 
 
