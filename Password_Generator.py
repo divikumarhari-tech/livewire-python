@@ -5,16 +5,18 @@ symbols=['!','@','#','$','%','^','&','*','(',')','-','=','+','_','[',']','{','}'
 noOfLetters=int(input("How many letters would you like in your password?\n"))
 noOfSymbols=int(input("How many symbols would you like?\n"))
 numOfNumbers=int(input("How many numbers would you like?\n"))
-passwordList=""
+passwordList=[]
 
 for char in range(1,noOfLetters+1):
-    passwordList+=random.choice(letters)
+    passwordList.append(random.choice(letters))
 
 
 for char in range(1,noOfSymbols+1):
-    passwordList+=random.choice(symbols)
+    passwordList.append(random.choice(symbols))
 
 for char in range(1,numOfNumbers+1):
-    passwordList+=random.choice(numbers)
+    passwordList.append(random.choice(numbers))
 
-print(f"Your password is: {passwordList}")
+random.shuffle(passwordList)
+
+print(f"Your password is: {''.join(passwordList)}")
